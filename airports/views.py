@@ -48,7 +48,6 @@ def calculate_distance(request):
                     status=400,
                 )
 
-            # Petición a la API
             base_url = "https://airportgap.com/api/airports/distance"
             data = {"from": aeropuerto_origen, "to": aeropuerto_destino}
             response = requests.post(base_url, json=data)
